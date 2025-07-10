@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Q9</title>
+  <style>
+    #container {
+      border: 2px solid #007bff;
+      padding: 16px;
+      width: 300px;
+      margin: 20px auto;
+    }
+    button {
+      margin-top: 16px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+    <div id="container">
+        <h2>My Header</h2>
+        <p>This is a <strong>paragraph</strong> with bold text.</p>
+        <span>This is a span.</span>
+    </div>
+
+  <button id="logBtn">Log DOM Relations of &lt;p&gt;</button>
+
+  <script>
+    const paragraph = document.querySelector('p');
+    const button = document.getElementById('logBtn');
+
+    button.addEventListener('click', () => {
+        console.log("Paragraph Element:", paragraph);
+        console.log("Parent Node:", paragraph.parentNode);
+        console.log("Child Nodes of <p>:", paragraph.childNodes);
+        console.log("Next Sibling:", paragraph.nextSibling);
+        console.log("Next Element Sibling:", paragraph.nextElementSibling);
+    });
+  </script>
+
+</body>
+</html>

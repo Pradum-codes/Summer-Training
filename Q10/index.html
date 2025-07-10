@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Q10</h2>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Enter a new task..." maxlength="100">
+                <div class="priority-selector">
+                    <span>Priority:</span>
+                    <button class="priority-btn low" data-priority="low">Low</button>
+                    <button class="priority-btn medium active" data-priority="medium">Medium</button>
+                    <button class="priority-btn high" data-priority="high">High</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="addBtn" class="btn btn-primary">
+                Add Task
+            </button>
+            <button id="removeLastBtn" class="btn btn-danger">
+                Remove Last
+            </button>
+            <button id="removeFirstBtn" class="btn btn-danger">
+                Remove First
+            </button>
+            <button id="clearAllBtn" class="btn btn-warning">
+                Clear All
+            </button>
+        </div>
+
+        <div class="list-container">
+            <ul id="taskList">
+                <!-- Tasks will be added dynamically -->
+            </ul>
+        </div>
+
+        <div class="task-counter" id="taskCounter">
+            No tasks yet. Add your first task above!
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
